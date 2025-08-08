@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A warm hello message for Naza">
+    <title>Hello Naza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="background-elements">
+            <div class="floating-circle circle-1"></div>
+            <div class="floating-circle circle-2"></div>
+            <div class="floating-circle circle-3"></div>
+            <div class="floating-circle circle-4"></div>
+        </div>
+        
+        <main class="main-content">
+            <div class="greeting-card">
+                <div class="greeting-header">
+                    <div class="wave-emoji" role="img" aria-label="waving hand">👋</div>
+                    <h1 class="greeting-title">
+                        <span class="hello-text">Hello</span>
+                        <span class="name-text">Naza</span>
+                    </h1>
+                </div>
+                
+                <div class="greeting-body">
+                    <p class="greeting-message">
+                        Welcome to your personalized space on the web!
+                    </p>
+                    <p class="greeting-subtitle">
+                        Hope you're having a wonderful day ✨
+                    </p>
+                </div>
+                
+                <div class="greeting-footer">
+                    <button class="surprise-btn" id="surpriseBtn" aria-label="Click for a surprise">
+                        <span class="btn-text">Click for a surprise!</span>
+                        <span class="btn-icon">🎉</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="time-display">
+                <div class="time-label">Current time</div>
+                <div class="time-value" id="currentTime"></div>
+            </div>
+        </main>
+        
+        <!-- Surprise modal -->
+        <div class="modal-overlay" id="modalOverlay" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+                <div class="modal-body">
+                    <div class="surprise-animation">🌟</div>
+                    <h2 id="modalTitle" class="modal-title">Surprise!</h2>
+                    <p class="modal-message">You're amazing, Naza! Keep being awesome! 🚀</p>
+                    <div class="confetti-container" id="confettiContainer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
